@@ -1,0 +1,1 @@
+ALTER TABLE "Book" ADD CONSTRAINT "stock_no_negativo" CHECK (stock >= 0);

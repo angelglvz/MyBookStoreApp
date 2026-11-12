@@ -4,6 +4,7 @@ import cookieParser from 'cookie-parser';
 import { env } from './config/env';
 import { prisma } from './lib/prisma';
 import { errorHandler } from './middlewares/errorHandler';
+import { authRouter } from './modules/auth/auth.routes';
 import { booksRouter } from './modules/books/books.routes';
 import { AppError } from './utils/AppError';
 
@@ -18,6 +19,7 @@ app.get('/api/health', async (_req, res) => {
   res.json({ status: 'ok', database: 'connected' });
 });
 
+app.use('/api/auth', authRouter);
 app.use('/api/books', booksRouter);
 
 app.use((req, _res, next) => {

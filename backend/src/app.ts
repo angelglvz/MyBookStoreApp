@@ -6,6 +6,7 @@ import { prisma } from './lib/prisma';
 import { errorHandler } from './middlewares/errorHandler';
 import { authRouter } from './modules/auth/auth.routes';
 import { booksRouter } from './modules/books/books.routes';
+import { cartRouter } from './modules/cart/cart.routes';
 import { AppError } from './utils/AppError';
 
 export const app = express();
@@ -21,6 +22,7 @@ app.get('/api/health', async (_req, res) => {
 
 app.use('/api/auth', authRouter);
 app.use('/api/books', booksRouter);
+app.use('/api/cart', cartRouter);
 
 app.use((req, _res, next) => {
   next(new AppError(404, `Ruta no encontrada: ${req.method} ${req.originalUrl}`));

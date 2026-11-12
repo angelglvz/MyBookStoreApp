@@ -262,9 +262,9 @@ Prioridades de testing:
 
 ## 🛣️ Hoja de ruta
 
-- [ ] **Fase 0 – Base**: monorepo, Docker, Prisma, Express y Next.js funcionando con "hola mundo".
-- [ ] **Fase 1 – Catálogo**: modelo `Book`, seed y listado con búsqueda y detalle.
-- [ ] **Fase 2 – Autenticación**: registro, login, JWT en cookie y rutas protegidas.
+- [x] **Fase 0 – Base**: monorepo, Docker, Prisma, Express y Next.js funcionando con "hola mundo".
+- [x] **Fase 1 – Catálogo**: modelo `Book`, seed y listado con búsqueda y detalle.
+- [x] **Fase 2 – Autenticación**: registro, login, JWT en cookie y rutas protegidas.
 - [ ] **Fase 3 – Carrito**: carrito persistente, fusión al hacer login.
 - [ ] **Fase 4 – Administración**: CRUD de libros solo para `ADMIN`.
 - [ ] **Fase 5 – Pagos**: checkout con Stripe Checkout y webhook que confirma el pedido.

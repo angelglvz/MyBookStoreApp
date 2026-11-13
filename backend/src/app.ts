@@ -4,6 +4,7 @@ import cookieParser from 'cookie-parser';
 import { env } from './config/env';
 import { prisma } from './lib/prisma';
 import { errorHandler } from './middlewares/errorHandler';
+import { adminRouter } from './modules/admin/admin.routes';
 import { authRouter } from './modules/auth/auth.routes';
 import { booksRouter } from './modules/books/books.routes';
 import { cartRouter } from './modules/cart/cart.routes';
@@ -23,6 +24,7 @@ app.get('/api/health', async (_req, res) => {
 app.use('/api/auth', authRouter);
 app.use('/api/books', booksRouter);
 app.use('/api/cart', cartRouter);
+app.use('/api/admin', adminRouter);
 
 app.use((req, _res, next) => {
   next(new AppError(404, `Ruta no encontrada: ${req.method} ${req.originalUrl}`));

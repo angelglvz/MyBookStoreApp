@@ -265,8 +265,8 @@ Prioridades de testing:
 - [x] **Fase 0 – Base**: monorepo, Docker, Prisma, Express y Next.js funcionando con "hola mundo".
 - [x] **Fase 1 – Catálogo**: modelo `Book`, seed y listado con búsqueda y detalle.
 - [x] **Fase 2 – Autenticación**: registro, login, JWT en cookie y rutas protegidas.
-- [ ] **Fase 3 – Carrito**: carrito persistente, fusión al hacer login.
-- [ ] **Fase 4 – Administración**: CRUD de libros solo para `ADMIN`.
+- [x] **Fase 3 – Carrito**: carrito persistente, fusión al hacer login.
+- [x] **Fase 4 – Administración**: CRUD de libros solo para `ADMIN`.
 - [ ] **Fase 5 – Pagos**: checkout con Stripe Checkout y webhook que confirma el pedido.
 - [ ] **Fase 6 – Pedidos**: historial y página de confirmación.
 - [ ] **Fase 7 – Calidad**: tests, validación de errores, README final con capturas.
